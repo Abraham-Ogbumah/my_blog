@@ -1,1 +1,43 @@
-body {}
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header header header" "ft ft ft ft ft ft" "ms ms ms ms ms ms" "fp fp fp fp fp fp" "mr mr mr mr mr mr" "footer footer footer footer footer footer";
+    grid-gap: 5px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.featured-section {
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "ft ft" "rp rp";
+}
+
+.featured {
+    grid-area: ft;
+}
+
+.recent-posts {
+    grid-area: rp;
+}
+
+.main-section {
+    grid-area: ms;
+}
+
+.featured-posts {
+    grid-area: fp;
+}
+
+.most-read {
+    grid-area:
+}
+
+.footer {
+    grid-area: footer;
+}
