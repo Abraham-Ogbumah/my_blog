@@ -1,43 +1,51 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "header header header header header header" "ft ft ft ft ft ft" "ms ms ms ms ms ms" "fp fp fp fp fp fp" "mr mr mr mr mr mr" "footer footer footer footer footer footer";
-    grid-gap: 5px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.header {
+.container {
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: "header header" "side main" "footer footer";
+}
+
+.top-nav {
     grid-area: header;
 }
 
-.featured-section {
-    grid-area: ft;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "ft ft" "rp rp";
+.left-pane {
+    grid-area: side;
 }
 
-.featured {
-    grid-area: ft;
+.right-pane {
+    grid-area: main;
 }
 
-.recent-posts {
-    grid-area: rp;
-}
-
-.main-section {
-    grid-area: ms;
-}
-
-.featured-posts {
-    grid-area: fp;
-}
-
-.most-read {
-    grid-area:
-}
-
-.footer {
+.bottom-nav {
     grid-area: footer;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 5%;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.search {
+    margin-left: 30px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
 }
