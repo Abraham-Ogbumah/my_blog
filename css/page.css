@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+    font-size: 16px;
+}
+
+body {}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 60px auto 750px auto auto;
+    grid-template-areas: "head head head head head head" "title title title title title title" "hero hero hero hero hero hero" "other other other other other other" "blog blog blog blog blog blog";
+}
+
+.top-nav {
+    grid-area: head;
+}
+
+.title {
+    grid-area: title;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.hero-image {
+    grid-area: hero;
+    background-image: url('../images/baby-1399332_1920.jpg');
+    background-size: 100% cover;
+}
+
+.other-details {
+    grid-area: other;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    margin: 10px auto 0;
+}
+
+.post {
+    grid-area: blog;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    display: grid;
+    grid-template-columns: 40px repeat(12, minmax(0, 1fr)) 40px;
+}
+
+.footer-nav {
+    grid-area: footer;
+}
+
+.para-text {
+    grid-column: 4/12;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 2.35rem;
+}
+
+footer {
+    background-color: brown;
+    position: relative;
+    height: 100px;
+}
+
+.foot {
+    position: absolute;
+    bottom: 0px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subtitle {
+    margin-top: 20px;
+}
+
+.closing {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.closing-text {
+    max-width: 700px;
+    max-height: 325px;
+    margin: 0 auto;
+}
+
+.closing-image {
+    width: 75px;
+    height: 75px;
+}
+
+.closing-image img {
+    width: 100%;
+}
