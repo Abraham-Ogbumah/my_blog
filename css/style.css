@@ -1,3 +1,4 @@
+@import "header.css";
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ Grid Definations
     grid-template-columns: 240px auto;
     grid-template-rows: 60px auto 60px;
     grid-template-areas: "header header" "side main" "footer footer";
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -43,7 +44,7 @@ Grid Definations
     grid-area: featured;
     background-image: url('../images/baby-1399332_1920.jpg');
     background-size: 100% 100% cover;
-    padding: 1.2rem;
+    padding: 2.2rem;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -92,37 +93,6 @@ Top Navigation
     grid-area: header;
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px 1.5%;
-}
-
-.logo {
-    margin-right: auto;
-    width: 60px;
-    madding-top: 5px
-}
-
-.logo img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.search {
-    margin-left: 30px;
-}
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
 
 /*****************************************************************
 
@@ -146,7 +116,9 @@ Others
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 1.5rem;
+    ;
 }
 
 .card-image img {
@@ -169,13 +141,24 @@ Others
 }
 
 .card {
+    position: relative;
     width: 325px;
     height: 325px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 15px;
 }
 
-footer {
-    background-color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.category-description {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.category-description a {
+    text-decoration: none;
+    color: black;
+}
+
+.published-date {
+    font-size: 0.8rem;
 }
