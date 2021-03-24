@@ -1,0 +1,46 @@
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem;
+    ;
+}
+
+.card-image img {
+    width: 100%
+}
+
+.card-category {
+    padding: 5px 15px;
+    background: #ff8700;
+    margin: 0 15px 0 0;
+    width: 70px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.category-section {
+    align-items: center;
+    margin: 5px 0 10px;
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 325px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.category-description {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.category-description a {
+    text-decoration: none;
+    color: black;
+}
