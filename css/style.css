@@ -109,6 +109,9 @@ Others
     font-size: 0.8rem;
 }
 
+
+/*Media Query*/
+
 @media(min-width:900px) {
     .container {
         display: grid;

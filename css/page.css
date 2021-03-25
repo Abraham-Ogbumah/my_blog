@@ -29,27 +29,25 @@ body {}
 .title {
     grid-area: title;
     display: grid;
-    grid-template-columns: 40px repeat(12, minmax(0, 1fr)) 40px;
+    grid-template-columns: 20px repeat(6, minmax(0, 1fr)) 20px;
     grid-column-start: 2;
     grid-column-end: 6;
 }
 
 .title-container {
     width: 100%;
-    grid-column-start: 4;
-    grid-column-end: 12;
+    grid-column-start: 2;
+    grid-column-end: 13;
 }
 
-.title-text {}
-
 .title h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .hero-image {
     grid-area: hero;
     background-image: url('../images/baby-1399332_1920.jpg');
-    background-size: cover;
+    background-size: 100% cover;
     background-repeat: no-repeat;
 }
 
@@ -73,9 +71,9 @@ body {}
 }
 
 .para-text {
-    grid-column: 4/12;
+    grid-column: 2/13;
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.35rem;
 }
 
@@ -83,7 +81,75 @@ footer {
     grid-area: footer;
 }
 
-.category-section {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.socials {
+    margin-left: auto;
+    margin-top: 5px;
+    ;
+}
+
+
+/*Media Query*/
+
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 60px auto 750px auto auto 60px;
+        grid-template-areas: "head head head head head head" "title title title title title title" "hero hero hero hero hero hero" "other other other other other other" "blog blog blog blog blog blog" "footer footer footer footer footer footer";
+        width: 100%;
+        height: 100vh;
+    }
+    .top-nav {
+        grid-area: head;
+    }
+    /*Page Title*/
+    .title {
+        grid-area: title;
+        display: grid;
+        grid-template-columns: 40px repeat(12, minmax(0, 1fr)) 40px;
+        grid-column-start: 2;
+        grid-column-end: 6;
+    }
+    .title-container {
+        width: 100%;
+        grid-column-start: 4;
+        grid-column-end: 12;
+    }
+    .title h1 {
+        font-size: 3.5rem;
+    }
+    .hero-image {
+        grid-area: hero;
+        background-image: url('../images/baby-1399332_1920.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .other-details {
+        grid-area: other;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        margin: 10px auto 0;
+    }
+    .post {
+        grid-area: blog;
+        grid-column-start: 2;
+        grid-column-end: 6;
+        display: grid;
+        grid-template-columns: 40px repeat(12, minmax(0, 1fr)) 40px;
+    }
+    .footer-nav {
+        grid-area: footer;
+    }
+    .para-text {
+        grid-column: 4/12;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        line-height: 2.35rem;
+    }
+    footer {
+        grid-area: footer;
+    }
+    .category-section {
+        display: flex;
+    }
 }
