@@ -65,6 +65,8 @@ Grid Definations
     font-size: 1.5rem;
     color: white;
     margin-bottom: 0;
+    background-color: #000;
+    padding: 5px;
 }
 
 .featured-post p {
@@ -73,6 +75,7 @@ Grid Definations
     color: #D3D3D3;
     margin-top: 5px;
     margin-bottom: 5px;
+    background-color: #000;
 }
 
 .featured-post button {
