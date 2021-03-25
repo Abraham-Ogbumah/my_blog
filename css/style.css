@@ -18,7 +18,7 @@ Grid Definations
 
 *************************************************************/
 
-.container {
+.wrapper {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 60px auto 60px;
@@ -120,7 +120,7 @@ Others
 /*Media Query*/
 
 @media(min-width:900px) {
-    .container {
+    .wrapper {
         display: grid;
         grid-template-columns: 240px auto;
         grid-template-rows: 60px auto 60px;
