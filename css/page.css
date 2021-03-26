@@ -89,6 +89,12 @@ footer {
     ;
 }
 
+blockquote {
+    margin: auto 40px;
+    display: grid;
+    display: none;
+}
+
 
 /*Media Query*/
 
@@ -123,7 +129,7 @@ footer {
     .hero-image {
         grid-area: hero;
         background-image: url('../images/baby-1399332_1920.jpg');
-        background-size: cover;
+        background-size: 100% cover;
         background-repeat: no-repeat;
     }
     .other-details {
@@ -153,5 +159,33 @@ footer {
     }
     .category-section {
         display: flex;
+    }
+    blockquote {
+        margin: auto 40px;
+        display: grid;
+    }
+    .author-card {
+        display: flex;
+    }
+    .author-name {
+        max-width: 200px;
+        max-height: 250px;
+        margin-right: 20px;
+    }
+    .author-name img {
+        width: 100%;
+        border: 1px #cccccc solid;
+        padding: 4px;
+        margin: auto;
+    }
+    figcaption {
+        background-color: black;
+        color: white;
+        font-style: italic;
+        padding: 2px;
+        text-align: center;
+    }
+    .bio {
+        line-height: 1.2rem;
     }
 }
