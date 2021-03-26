@@ -95,6 +95,36 @@ blockquote {
     display: none;
 }
 
+.author-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    max-width: 350px;
+    max-height: 350px;
+    margin-right: 20px;
+}
+
+.author-name img {
+    width: 100%;
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+}
+
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+}
+
+.bio {
+    line-height: 1.2rem;
+}
+
 
 /*Media Query*/
 
@@ -166,6 +196,7 @@ blockquote {
     }
     .author-card {
         display: flex;
+        flex-direction: row;
     }
     .author-name {
         max-width: 200px;
