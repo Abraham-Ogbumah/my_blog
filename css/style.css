@@ -7,8 +7,14 @@
     font-family: "Helvetica"
 }
 
+html {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f9f9f9;
+    position: relative;
+    min-height: 100vh;
 }
 
 
